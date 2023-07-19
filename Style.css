@@ -71,7 +71,7 @@ footer .container .sec p{
     color: #fff;
 }
 .parallax{
-    background-image:url('file:///home/kiendt/Desktop/Web%20Project/Assets/image.jpg');
+    background-image:url('Assets/image.jpg');
     background-size:cover ;
     background-position: center;
     background-repeat: no-repeat;
