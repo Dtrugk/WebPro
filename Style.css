@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif ;
+}
+body
+{
+    /*overflow: hidden;*/
+    background-color: #fff;
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #fff;
+}
+footer .container{
+    width: 100%;
+    display: grid;
+}
+footer .container .sec h2{
+    position: relative;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+footer .container .sec p{
+    color: #555;
+}
+.logo{
+    color:#112423;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.navigation li{
+    list-style: none;
+}
+.navigation li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #112434;
+    border-radius: 8px;
+}
+.navigation li a:hover,
+.navigation li a.active{
+    background: #112423;
+    color: #fff;
+}
+.parallax{
+    background-image:url('file:///home/kiendt/Desktop/Web%20Project/Assets/image.jpg');
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    font-size: 35px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content {
+    display: flex;
+    padding: 5vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.input-container {
+    position: relative;
+    display: flex;
+    height: 2.8rem;
+    width: 100%;
+    min-width: 470px;
+    max-width: 500px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+  }
+  
+  .input-container input {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid  rgb(176 190 197);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.625rem 70px 0.625rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: rgb(69 90 100);
+    outline: none;
+    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .input-container input:focus {
+    border: 1px solid rgb(76, 80, 76);
+  }
+  
+  .invite-btn {
+    position: absolute;
+    width: 65px;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    z-index: 10;
+    border-radius: 4px;
+    background-color: rgb(8, 10, 8);
+    color: #fff;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    transition: .6s ease;
+  }
+  
+  .invite-btn:hover {
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 8px;
+  }
+  
+  .input-container input:placeholder-shown ~ .invite-btn {
+    pointer-events: none;
+    background-color: gray;
+    opacity: 0.5;
+  }
+  .sec{
+    position: relative;
+    padding: 100px;
+    background: #112434;
+  }
+  .sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .sec p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+  }
