@@ -175,3 +175,34 @@ footer .container .sec p{
     color: #fff;
     font-weight: 300;
   }
+  .container1 {
+    display: flex; /* Make the two columns flex items */
+    justify-content: space-between; /* Space them evenly along the container */
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+.column {
+  width: 48%; /* Adjust the width as needed */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the glass-box effect */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 10px; /* Rounded corners for the glass-box effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px;
+}
+.cards {
+  display: flex; /* Make the cards flex items */
+  justify-content: space-between; /* Space them evenly along the container */
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 20px auto; /* Center the cards and add some space */
+  padding: 20px;
+}
+
+.card {
+  width: 30%; /* Adjust the width as needed */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the glass-box effect */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 10px; /* Rounded corners for the glass-box effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px;
+}
