@@ -231,6 +231,7 @@ footer .container .sec p{
 
 /* Style for the cards */
 .cards-container {
+    position: absolute;
     display: flex; /* Make the cards flex items */
     flex-wrap: wrap; /* Wrap the cards to the next line when there's not enough space */
     justify-content: space-between; /* Space them evenly along the container */
@@ -238,6 +239,7 @@ footer .container .sec p{
     margin: 20px auto; /* Center the cards and add some space */
     padding: 20px;
     align-items:flex-end;
+    margin-bottom: 0;
 }
 
 .card {
