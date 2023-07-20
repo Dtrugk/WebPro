@@ -186,7 +186,7 @@ footer .container .sec p{
 /* Style for the columns */
 .column {
     width: 48%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(82, 78, 78, 0.8);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -205,7 +205,7 @@ footer .container .sec p{
 
 .card {
     width: 30%; /* Adjust the width as needed */
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the glass-box effect */
+    background-color: rgba(82, 78, 78, 0.8); /* Semi-transparent white background for the glass-box effect */
     backdrop-filter: blur(10px); /* Glass effect */
     border-radius: 10px; /* Rounded corners for the glass-box effect */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
