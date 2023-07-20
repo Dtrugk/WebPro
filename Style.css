@@ -212,7 +212,7 @@ footer .container .sec p{
   .container1 {
     display: flex;
     justify-content: space-between;
-    max-height: fit-content;
+    max-height: 750px;
     max-width: 1375px;
     margin: 0 auto;
     margin-top: 100px;
@@ -231,7 +231,7 @@ footer .container .sec p{
 
 /* Style for the cards */
 .cards-container {
-    position: absolute;
+    position: relative;
     display: flex; /* Make the cards flex items */
     flex-wrap: wrap; /* Wrap the cards to the next line when there's not enough space */
     justify-content: space-between; /* Space them evenly along the container */
