@@ -238,8 +238,6 @@ footer .container .sec p{
     max-width: 1375px; /* Adjust the maximum width as needed */
     margin: 20px auto; /* Center the cards and add some space */
     padding: 20px;
-    align-items:flex-end;
-    margin-bottom: 0;
 }
 
 .card {
