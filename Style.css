@@ -85,6 +85,7 @@ footer .container .sec p{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: 40px;
 }
 .content {
     display: flex;
