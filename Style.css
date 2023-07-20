@@ -80,6 +80,7 @@ footer .container .sec p{
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
+    background-attachment: scroll;
     font-size: 35px;
     position: relative;
     display: flex;
@@ -166,6 +167,37 @@ footer .container .sec p{
     position: relative;
     padding: 100px;
     background: #112434;
+  }
+  .sec1{
+    position: relative;
+    padding: 100px;
+    background: #0a2134;
+  }
+  .sec2{
+    position: relative;
+    padding: 100px;
+    background: #06233b;
+  }
+  .sec2 h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .sec2 p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+  }
+
+  .sec1 h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .sec1 p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
   }
   .sec h2{
     font-size: 3em;
