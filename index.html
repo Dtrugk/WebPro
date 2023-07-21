@@ -2,26 +2,34 @@
 <html>
     <head>
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
-        <title>Landing Page</title>
+        <title>MyWebsite</title>
         <link rel="icon" type="image/png" href="/github.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="Style.css">
     </head>
     <body>
-        <header>
+        <header class="header container">
             <a href="#" class="logo">
                 KienDT
             </a>
-            <ul class="navigation">
-                <li><a href="index.html"class="active">Landing Page</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="chat.html">Chatbot</a></li>
-                <li><a href="pof.html">Porfolio</a></li>
-            </ul>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html"class="active">Landing Page</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="chat.html">Chatbot</a></li>
+                    <li><a href="pof.html">Porfolio</a></li>
+                </ul>
+                <button class="bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg> 
+                </button>
+            </nav>
         </header>
-        <section class="parallax">
+        <section class="parallax container">
             <div class ="content">
                 <h2 id="text">Welcome to my website</h2>
+                <p id="text">Hello,world Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ea quisquam maxime ut. Adipisci voluptatum ex sapiente, nobis quam earum? Commodi voluptatem, totam adipisci quae minima est accusantium! Nostrum, totam?</p>
                 <div class="input-container">
                     <input required="" placeholder="Who are you?" type="email">
                     <button class="invite-btn" type="button">
@@ -31,10 +39,9 @@
             </div>
         </section>
 
-        <section class="sec">
+        <section class="sec container">
             <h2>About this website</h2>
             <p>Welcome to my summer project website for my second year of university! This website represents the culmination of my hard work, creativity, and dedication to web development.</p>
-
             <p>Designed as a showcase of my skills and knowledge, this project highlights the progress I've made throughout my academic journey. The landing page welcomes visitors with a visually stunning and engaging experience, setting the tone for what lies ahead.</p>
 
             <p>As you explore the home page, you'll find a wealth of information and updates related to my summer project. This section serves as a hub of knowledge, offering insights into my thought process, challenges encountered, and the exciting features implemented.</p>
@@ -48,14 +55,5 @@
             <p>Whether you're an industry professional, fellow student, or simply someone curious about my work, I invite you to explore this website and witness the growth and progress I've made. Thank you for joining me on this exciting journey!</p>
             <p>Do you like snowy mountain? </p>
         </section>
-        <footer>
-            <div class="container">
-                <div class="GBye">
-                    <h2>This is the end, See you around</h2>
-                    <p>Nothing here actually</p>
-                </div>
-                
-            </div>
-        </footer>
     </body>
 </html>
