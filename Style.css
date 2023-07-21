@@ -13,12 +13,13 @@ html{
 body
 {
     /*overflow: hidden;*/
+    position: relative;
     background-color: #fff;
     min-height: 100vh;
     margin: 0;
 }
 header{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -29,7 +30,7 @@ header{
     z-index: 1000;
 }
 footer{
-    position: relative;
+    position: fixed;
     width: 100%;
     height: auto;
     padding: 50px 100px;
@@ -75,7 +76,7 @@ footer .container .sec p{
     color: #fff;
 }
 .parallax{
-    background-image:url('Assets/image.jpg');
+    /*background-image:url('Assets/image.jpg');*/
     background-size:cover ;
     background-position: center;
     background-repeat: no-repeat;
@@ -209,47 +210,18 @@ footer .container .sec p{
     color: #fff;
     font-weight: 300;
   }
+  
+@media screen and (max-width: 768px) {
   .container1 {
-    display: flex;
-    justify-content: space-between;
-    max-height: 750px;
-    max-width: 1375px;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding: 20px;
+    flex-direction: column;
+    max-height: none;
+  }
+  .column, .column1 {
+    width: 100%;
+  }
 }
-
-/* Style for the columns */
-.column {
-    width: 51%;
-    background-color: rgba(175, 170, 170, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(103, 101, 101, 0.1);
-    padding: 20px;
-}
-
-/* Style for the cards */
-.cards-container {
-    position: relative;
-    display: flex; /* Make the cards flex items */
-    flex-wrap: wrap; /* Wrap the cards to the next line when there's not enough space */
-    justify-content: space-between; /* Space them evenly along the container */
-    max-width: 1375px; /* Adjust the maximum width as needed */
-    margin: 20px auto; /* Center the cards and add some space */
-    padding: 20px;
-}
-
-.card {
-    width: 30%; /* Adjust the width as needed */
-    background-color: rgba(175, 170, 170, 0.8); /* Semi-transparent white background for the glass-box effect */
-    backdrop-filter: blur(10px); /* Glass effect */
-    border-radius: 10px; /* Rounded corners for the glass-box effect */
-    box-shadow: 0 2px 4px rgba(103, 101, 101, 0.1); /* Shadow for depth */
-    padding: 20px;
-}
-.column1{
-  color: #0b0a0a;
-  width: 48%;
-  padding: 20px;
+@media screen and (max-width: 480px) {
+  .sec, .sec1, .sec2 {
+    padding: 50px;
+  }
 }
