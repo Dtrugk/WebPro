@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 *
 {
+      align-items: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +19,6 @@ body
     margin: 0;
 }
 .container{
-  border: red solid 2px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -36,8 +36,15 @@ header{
     align-items: center;
     z-index: 1000;
 }
+.content {
+  display: flex;
+  padding: 5vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .logo{
-    border: red solid;
     color:#112423;
     font-weight: 700;
     font-size: 2em;
@@ -50,7 +57,6 @@ header{
   display: block;
 }
 .navigation{
-    border: red solid;
     display: none;
     justify-content: center;
     align-items: center;
@@ -71,9 +77,11 @@ header{
     color: #fff;
 }
 .bar{
+    border: #0b0f29 solid 2px;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
     color: #0b0f29;
-    width: 2px;
-    height: 2px;
     display: block;
 }
 .parallax{
@@ -85,91 +93,83 @@ header{
     background-attachment: scroll;
     font-size: 35px;
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex: 1;
+    gap: 0.75em;
 }
 .parallax p{
-  font-size: 0.5em;
+  font-size: 0.45em;
   color: #0b0f29;
   font-weight: 300;
 }
-.content {
-    display: flex;
-    padding: 5vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 .input-container {
-    position: relative;
-    display: flex;
-    height: 2.8rem;
-    width: 100%;
-    min-width: 470px;
-    max-width: 500px;
-    background-color: transparent;
-    border-radius: 8px;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
-  }
-  
-  .input-container input {
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid  rgb(176 190 197);
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 0.625rem 70px 0.625rem 0.75rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 400;
-    color: rgb(69 90 100);
-    outline: none;
-    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .input-container input:focus {
-    border: 1px solid rgb(76, 80, 76);
-  }
-  
-  .invite-btn {
-    position: absolute;
-    width: 65px;
-    right: 4px;
-    top: 4px;
-    bottom: 4px;
-    z-index: 10;
-    border-radius: 4px;
-    background-color: rgb(8, 10, 8);
-    color: #fff;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border: none;
-    transition: .6s ease;
-  }
-  
-  .invite-btn:hover {
-    right: 2px;
-    top: 2px;
-    bottom: 2px;
-    border-radius: 8px;
-  }
-  
-  .input-container input:placeholder-shown ~ .invite-btn {
-    pointer-events: none;
-    background-color: gray;
-    opacity: 0.5;
-  }
+  position: relative;
+  display: flex;
+  height: 2.8rem;
+  width: 100%;
+  /*min-width: 470px;*/
+  max-width: 500px;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+  margin-top: 25px;
+}
+
+.input-container input {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgb(176 190 197);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 70px 0 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(69 90 100);
+  outline: none;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container input:focus {
+  border: 1px solid rgb(76, 80, 76);
+}
+
+.invite-btn {
+  position: absolute;
+  width: 65px;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  z-index: 10;
+  border-radius: 4px;
+  background-color: rgb(8, 10, 8);
+  color: #fff;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.6s ease;
+}
+
+.invite-btn:hover {
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  border-radius: 8px;
+}
+.input-container input:placeholder-shown ~ .invite-btn {
+  pointer-events: none;
+  background-color: gray;
+  opacity: 0.5;
+}
   .sec{
     position: relative;
     padding: 100px;
@@ -186,9 +186,9 @@ header{
     font-weight: 300;
   }
 
-  @media (min-width: 690px) {
+  @media (min-width: 700px) {
     .navigation{
-      border: red solid;
+      
       display: flex;
       justify-content: center;
       align-items: center;
@@ -213,5 +213,10 @@ header{
       width: 2px;
       height: 2px;
       display: none;
+  }
+  .parallax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
  }
