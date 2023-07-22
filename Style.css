@@ -61,9 +61,8 @@ header {
   height: 50px;
   display: block;
 }
-
 .navigation {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -92,7 +91,7 @@ header {
   width: 45px;
   height: 45px;
   color: #0b0f29;
-  display: block;
+  display: none;
 }
 
 .parallax {
@@ -210,39 +209,63 @@ header {
   font-weight: 300;
 }
 
-@media (min-width: 700px) {
+.parallax {
+  width: 100%;
+  /*display: flex;*/
+}
+
+.div1-content {
+  width: auto;
+  height: 500px;
+  border-radius: 8px;
+  background: green;
+  justify-content: center;
+  align-items: center;
+}
+.div1-content1 {
+  height: 500px;
+  width: auto;
+  border-radius: 8px;
+  background: rgb(84, 192, 84);
+  justify-content: center;
+  align-items: center;
+}
+.div-container1 {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.div-container2 {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 700px) {
   .navigation {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     gap: 40px;
   }
-  .navigation li {
-    list-style: none;
-  }
-  .navigation li a {
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #112434;
-    border-radius: 8px;
-  }
-  .navigation li a:hover,
-  .navigation li a.active {
-    background: #112423;
-    color: #fff;
-  }
   .bar {
-    color: #0b0f29;
-    width: 2px;
-    height: 2px;
-    display: none;
+    display: block;
   }
-  .parallax {
+  .div-container2 {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
   }
-  .div-container{
-
+  .div-container1 {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    display: flex;
   }
-} /*# sourceMappingURL=index.css.map */
+}
