@@ -208,23 +208,9 @@ header {
 .div-container1 {
   display: flex;
   gap: 10px;
-  width: 100%;
+  width: 97%;
   justify-content: space-between;
   margin: 10px;
-}
-
-.div-container2 {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-  justify-content:right ;
-  margin: 10px;
-}
-.card{
-  background: greenyellow;
-  border-radius: 8px;
-  width: 250rem;
-  height: 200px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -236,10 +222,6 @@ header {
   }
   .bar {
     display: block;
-  }
-  .div-container2 {
-    width: 100%;
-    justify-content: space-between;
   }
   .div-container1 {
     width: 100%;
