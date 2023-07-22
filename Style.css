@@ -40,6 +40,7 @@ header {
 }
 
 .content {
+  border: red solid 2px;
   display: flex;
   padding: 5vh;
   flex-direction: column;
@@ -47,19 +48,11 @@ header {
   justify-content: center;
   text-align: center;
 }
-
 .logo {
   color: #112423;
   font-weight: 700;
   font-size: 2em;
   text-decoration: none;
-}
-
-.bars {
-  color: #0b0f29;
-  width: 50px;
-  height: 50px;
-  display: block;
 }
 .navigation {
   display: flex;
@@ -67,24 +60,20 @@ header {
   align-items: center;
   gap: 40px;
 }
-
 .navigation li {
   list-style: none;
 }
-
 .navigation li a {
   text-decoration: none;
   padding: 6px 15px;
   color: #112434;
   border-radius: 8px;
 }
-
 .navigation li a:hover,
 .navigation li a.active {
   background: #112423;
   color: #fff;
 }
-
 .bar {
   border: #0b0f29 solid 2px;
   border-radius: 8px;
@@ -94,7 +83,9 @@ header {
   display: none;
 }
 
+/* Parallax section styles */
 .parallax {
+  border: red solid 2px;
   /*background-image:url('Assets/image.jpg');*/
   background-size: cover;
   background-position: center;
@@ -107,22 +98,29 @@ header {
   align-items: center;
   height: 100vh;
   flex: 1;
+  width: 100%;
   gap: 0.75em;
-  width: 80%;
 }
-
+.content {
+  display: flex;
+  padding: 5vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .parallax p {
   font-size: 0.45em;
   color: #0b0f29;
   font-weight: 300;
 }
 
+/* Input styles */
 .input-container {
   position: relative;
   display: flex;
   height: 2.8rem;
   width: 100%;
-  /*min-width: 470px;*/
   max-width: 500px;
   background-color: transparent;
   border-radius: 8px;
@@ -144,11 +142,9 @@ header {
   outline: none;
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .input-container input:focus {
   border: 1px solid rgb(76, 80, 76);
 }
-
 .invite-btn {
   position: absolute;
   width: 65px;
@@ -171,51 +167,39 @@ header {
   border: none;
   transition: 0.6s ease;
 }
-
 .invite-btn:hover {
   right: 2px;
   top: 2px;
   bottom: 2px;
   border-radius: 8px;
 }
-
 .input-container input:-moz-placeholder-shown ~ .invite-btn {
   pointer-events: none;
   background-color: gray;
   opacity: 0.5;
 }
-
 .input-container input:placeholder-shown ~ .invite-btn {
   pointer-events: none;
   background-color: gray;
   opacity: 0.5;
 }
-
 .sec {
   position: relative;
   padding: 100px;
   background: #112434;
 }
-
 .sec h2 {
   font-size: 3em;
   color: #fff;
   margin-bottom: 10px;
 }
-
 .sec p {
   font-size: 1em;
   color: #fff;
   font-weight: 300;
 }
-
-.parallax {
-  width: 100%;
-  /*display: flex;*/
-}
-
 .div1-content {
-  width: auto;
+  width: 750px;
   height: 500px;
   border-radius: 8px;
   background: green;
@@ -224,7 +208,7 @@ header {
 }
 .div1-content1 {
   height: 500px;
-  width: auto;
+  width: 750px;
   border-radius: 8px;
   background: rgb(84, 192, 84);
   justify-content: center;
