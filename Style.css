@@ -76,7 +76,6 @@ header {
 
 /* Parallax section styles */
 .parallax {
-  border: red solid;
   font-size: 35px;
   position: relative;
   justify-content: center;
@@ -192,8 +191,9 @@ header {
   align-items: center;
 }
 .div1-content1 {
-  height: 400px;
-  width: 750px;
+  height: 450px;
+  width: 90%;
+  min-width: 700;
   border-radius: 8px;
   background: rgb(84, 192, 84);
   flex-direction: column;
@@ -202,7 +202,6 @@ header {
   text-align: center;
 }
 .div-container1 {
-  border: red solid;
   padding-top: 10px;
   display: flex;
   gap: 10px;
