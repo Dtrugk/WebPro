@@ -89,13 +89,13 @@ header {
 .parallaxs {
   font-size: 35px;
   position: relative;
-  justify-content: center;
+  justify-content: center;  
   align-items: center;
   height: 100vh;
   flex: 1;
   width: 100%;
   gap: 0.75em;
-  padding: 12% 2% 0 2%;
+  padding: 6% 2% 0 2%;
 }
 .content {
   position: relative;
@@ -225,14 +225,59 @@ header {
   justify-content: space-between;
   align-content: flex-end;
   margin-top: 10px;
-}
+} 
 .card{
-  background: greenyellow;
-  border-radius: 8px;
+  position: relative;
   width: 100%;
-  height: 200px;
+  height: 210px;
 }
-
+.card .face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.card .face.face1{
+  border-radius: 8px;
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform-origin: bottom;
+}
+.card .face.face2{
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transform-origin: top;
+  transform: translateY(100%) rotateX(90deg);
+}
+.card:hover .face.face2{
+  transform: translateY(0) rotateX(0deg);
+}
+.card:hover .face.face1{
+  transform: translateY(-100%) rotateX(90deg);
+  background: rgb(137, 47, 37);
+}
+.card .face.face1 img{
+  max-width: 100px;
+}
+.card .face.face1 h2{
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 25px;
+}
+.card p{
+  font-size: 15px;
+}
+.card h2{
+  font-size: 15px;
+}
 @media only screen and (max-width: 1024px) {
   .navigation {
     display: none;
