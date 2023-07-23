@@ -184,7 +184,7 @@ header {
   font-weight: 300;
 }
 .div1-content {
-  width: 500px;
+  width: 700px;
   height: 300px;
   border-radius: 8px;
   justify-content: center;
@@ -202,12 +202,10 @@ header {
   text-align: center;
 }
 .div-container1 {
-  padding-top: 10px;
   display: flex;
   gap: 10px;
   width: 100%;
   justify-content: space-between;
-  overflow:hidden ;
 }
 
 @media only screen and (max-width: 1024px) {
