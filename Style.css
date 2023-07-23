@@ -249,7 +249,8 @@ header {
   transform-origin: bottom;
 }
 .card .face.face2{
-  background: #fff;
+  border-radius: 8px;
+  background: #504646;
   display: flex;
   justify-content: center;
   align-items: center;
