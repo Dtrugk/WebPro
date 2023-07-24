@@ -125,6 +125,10 @@ header {
   justify-content: center;
   align-items: center;
 }
+hr {
+  height: 2px; /* You can adjust this value to change the thickness */
+  border-color: #0b0f29; /* Change this to your desired color */
+}
 .div1-content1 {
   background: #C3EDC0;
   height: 375px;
@@ -168,22 +172,35 @@ header {
     padding: 7px;
     box-shadow: 10px 10px;
 }
+.card-content{
+  margin-top: 10px;
+}
+.card:hover{
+  transform: translateY(-5px);
+}
 .button {
     position: absolute; /* Position the button relative to its closest positioned ancestor (in this case, the .card). */
     bottom: 10px; /* Distance from the top edge of the card. Adjust as needed. */
     right: 10px; /* Distance from the right edge of the card. Adjust as needed. */
-    background-color: #0b0f29;
-    color: #fff ;
-    padding: 10px 20px;
+    background-color:#AAC8A7;
+    color: #0b0f29 ;
+    padding: 5px 10px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    border: 3px solid #0b0f29;
+    align-content: center;
   }
   .button:hover{
     border: 2px solid #0b0f29;
-    background-color:#fff;
+    background-color:#AAC8A7;
     color: #0b0f29;
+    box-shadow: 5px 5px;
   }
+  .button:active{
+    transform: translateY(4px);
+  }
+
 .card h2{
     font-size: 20px;
 }

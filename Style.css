@@ -162,7 +162,7 @@ header {
 }
 .input-container input:-moz-placeholder-shown ~ .invite-btn {
   pointer-events: none;
-  background-color: gray;
+  background-color: transparent;
   opacity: 0.5;
 }
 .input-container input:placeholder-shown ~ .invite-btn {
