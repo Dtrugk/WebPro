@@ -18,7 +18,9 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-
+main{
+    background: #E9FFC2;
+}
 .container {
   width: 100%;
   margin-left: auto;
@@ -86,7 +88,7 @@ header {
   flex: 1;
   width: 100%;
   gap: 0.75em;
-  padding:10% 2% 0 2%;
+  padding: 10% 2% 0 2%;
 }
 .content {
   position: relative;
@@ -124,6 +126,7 @@ header {
   align-items: center;
 }
 .div1-content1 {
+  background: #C3EDC0;
   height: 375px;
   width: 50%;
   min-width: 600px;
@@ -133,35 +136,61 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  box-shadow: 10px 10px;
 }
 .div-container1 {
   display: flex;
   gap: 10px;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .div-container1 p{
     font-size: 25px;
 }
 .div-container2{
   display: flex;
-  gap: 10px;
+  gap: 15px;
   width: 100%;
   justify-content: space-between;
   align-content: flex-end;
   margin-top: 10px;
 } 
 .card{
+    background: #AAC8A7;
+    position: relative;
     border-radius: 8px;
     border:#0b0f29 solid;
     height: 195px;
     width: 100%;
     min-width: 150px;
+    justify-content: flex-start;
+    padding: 7px;
+    box-shadow: 10px 10px;
 }
+.button {
+    position: absolute; /* Position the button relative to its closest positioned ancestor (in this case, the .card). */
+    bottom: 10px; /* Distance from the top edge of the card. Adjust as needed. */
+    right: 10px; /* Distance from the right edge of the card. Adjust as needed. */
+    background-color: #0b0f29;
+    color: #fff ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .button:hover{
+    border: 2px solid #0b0f29;
+    background-color:#fff;
+    color: #0b0f29;
+  }
 .card h2{
     font-size: 20px;
 }
 .card p{
+    font-size: 15px;
+}
+.button p{
     font-size: 15px;
 }
 

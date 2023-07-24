@@ -76,6 +76,7 @@ header {
 
 /* Parallax section styles */
 .parallax {
+  background: #E9FFC2;
   font-size: 35px;
   position: relative;
   justify-content: center;
@@ -126,6 +127,7 @@ header {
   color: rgb(69, 90, 100);
   outline: none;
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 10px 10px #0b0f29;
 }
 .input-container input:focus {
   border: 1px solid rgb(76, 80, 76);
@@ -171,16 +173,16 @@ header {
 .sec {
   position: relative;
   padding: 100px;
-  background: #112434;
+  background: #AAC8A7;
 }
 .sec h2 {
   font-size: 3em;
-  color: #fff;
+  color: #0b0f29;
   margin-bottom: 10px;
 }
 .sec p {
   font-size: 1em;
-  color: #fff;
+  color:#0b0f29;
   font-weight: 300;
 }
 
