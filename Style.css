@@ -95,7 +95,7 @@ header {
   flex: 1;
   width: 100%;
   gap: 0.75em;
-  padding: 6% 2% 0 2%;
+  padding: 10% 2% 0 2%;
 }
 .content {
   position: relative;
@@ -246,6 +246,7 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  transition: 0.2s ease-in-out ;
   transform-origin: bottom;
 }
 .card .face.face2{
@@ -263,7 +264,7 @@ header {
 }
 .card:hover .face.face1{
   transform: translateY(-100%) rotateX(90deg);
-  background: rgb(137, 47, 37);
+  background:#fff;
 }
 .card .face.face1 img{
   max-width: 100px;
@@ -279,6 +280,7 @@ header {
 .card h2{
   font-size: 15px;
 }
+
 @media only screen and (max-width: 1024px) {
   .navigation {
     display: none;
