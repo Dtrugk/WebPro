@@ -62,8 +62,9 @@ header {
 }
 .navigation li a:hover,
 .navigation li a.active {
-  background: #112423;
-  color: #fff;
+  background: #AAC8A7;
+  border: #0b0f29 solid 2px;
+  box-shadow: 5px 5px;
 }
 .bar {
   border: #0b0f29 solid 2px;

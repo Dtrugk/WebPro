@@ -22,6 +22,8 @@ main{
     background: #E9FFC2;
 }
 .container {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -70,6 +72,10 @@ header {
   border: #0b0f29 solid 2px;
   box-shadow: 5px 5px;
 }
+#PP {
+    font-size: 11px;
+    font-family: 'press start 2p'
+  }
 .bar {
   border: #0b0f29 solid 2px;
   border-radius: 8px;
@@ -118,99 +124,61 @@ header {
   color: #fff;
   font-weight: 300;
 }
-.div1-content {
-  width: 700px;
-  height: 100%;
-  height: 250px;
-  border-radius: 8px;
-  justify-content: center;
-  align-items: center;
-}
-hr {
-  height: 2px; /* You can adjust this value to change the thickness */
-  border-color: #0b0f29; /* Change this to your desired color */
-}
-.div1-content1 {
-  background: #C3EDC0;
-  height: 375px;
-  width: 50%;
-  min-width: 600px;
-  border-radius: 8px;
-  border: #0b0f29 solid;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-shadow: 10px 10px;
-}
-.div-container1 {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-.div-container1 p{
-    font-size: 25px;
-}
-.div-container2{
-  display: flex;
-  gap: 15px;
-  width: 100%;
-  justify-content: space-between;
-  align-content: flex-end;
-  margin-top: 10px;
-} 
-.card{
-    background: #AAC8A7;
-    position: relative;
-    border-radius: 8px;
-    border:#0b0f29 solid;
-    height: 195px;
-    width: 100%;
-    min-width: 150px;
-    justify-content: flex-start;
-    padding: 7px;
-    box-shadow: 10px 10px;
-}
-.card-content{
-  margin-top: 10px;
-}
-.card:hover{
-  transform: translateY(-5px);
-}
-.button {
-    position: absolute; /* Position the button relative to its closest positioned ancestor (in this case, the .card). */
-    bottom: 10px; /* Distance from the top edge of the card. Adjust as needed. */
-    right: 10px; /* Distance from the right edge of the card. Adjust as needed. */
-    background-color:#AAC8A7;
-    color: #0b0f29 ;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 3px solid #0b0f29;
-    align-content: center;
-  }
-  .button:hover{
-    border: 2px solid #0b0f29;
-    background-color:#AAC8A7;
-    color: #0b0f29;
-    box-shadow: 5px 5px;
-  }
-  .button:active{
-    transform: translateY(4px);
-  }
-
-.card h2{
-    font-size: 20px;
+.card-container{
+    display:flex;
+    padding: 40px;
+    gap:35px;
 }
 .card p{
-    font-size: 15px;
+    font-family: "Press Start 2P";
+    font-size: 12px;
 }
-.button p{
-    font-size: 15px;
+.card{
+    width: 110px;
+    height: 110px;
+    border: #0b0f29 solid 3px;
+    box-shadow: 10px 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: waveAnimation 2s infinite alternate;
 }
+.card:hover{
+    transform: translateY(-10px);
+}
+#card1{
+    animation-delay: 0.25s;
+}
+#card2{
+    animation-delay: 0.5s;
+}
+#card3{
+    animation-delay: 0.75s;
+}
+#card4{
+    animation-delay: 1s;
+}
+#card5{
+    animation-delay: 1.25s;
+}
+#card6{
+    animation-delay: 1.5s;
+}
+#card7{
+    animation-delay: 1.75s;
+}
+#card8{
+    animation-delay: 2s;
+}
+@keyframes waveAnimation {
+    0%,100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 
 @media only screen and (max-width: 1024px) {
   .navigation {
