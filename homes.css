@@ -149,12 +149,15 @@ section,
   color: #0b0f29;
   box-shadow: 5px 5px;
   outline: 0;
+  transform: translateY(-4px);
 }
 #btn3:hover {
   transform: translateY(4px);
-  outline: 0;
+  box-shadow: 5px 5px;
 }
-
+/* #btn3:focus{
+  box-shadow: none; 
+}  */
 .card h2 {
   font-size: 20px;
 }
