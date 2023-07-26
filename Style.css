@@ -12,9 +12,8 @@ html {
 }
 
 body {
-  /*overflow: hidden;*/
+  background-color: #E9FFC2;
   position: relative;
-  background-color: #fff;
   min-height: 100vh;
   margin: 0;
 }
@@ -28,6 +27,7 @@ body {
 }
 
 header {
+  background-color: #E9FFC2;
   position: absolute;
   top: 0;
   left: 0;
@@ -38,17 +38,31 @@ header {
   align-items: center;
   z-index: 1000;
 }
+.header {
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 50px 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
 
 .logo {
-  color: #112423;
+  color: #0b0f29;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2em; /* Please don't use 'em' if possible */
   text-decoration: none;
 }
+
+.logo:hover {
+  text-decoration: none;
+}
+
 .navigation {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 40px;
 }
 .navigation li {
@@ -62,7 +76,7 @@ header {
 }
 .navigation li a:hover,
 .navigation li a.active {
-  background: #AAC8A7;
+  background: #aac8a7;
   border: #0b0f29 solid 2px;
   box-shadow: 5px 5px;
 }
@@ -74,7 +88,6 @@ header {
   color: #0b0f29;
   display: none;
 }
-
 /* Parallax section styles */
 .parallax {
   background: #E9FFC2;

@@ -9,7 +9,7 @@ hr{
 }
 /* Optional: Add spacing between the two inner divs */
 .flex-container > div {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 /* Optional: To remove spacing after the last div */
@@ -22,6 +22,7 @@ hr{
   bottom: 0;
 }
 header {
+  /* border: red solid 2px; */
   position: absolute;
   top: 0;
   left: 0;
@@ -91,7 +92,7 @@ section,
 .carousel,
 .carousel-inner,
 .carousel-item {
-  /* border: 1px solid red; */
+  /* border: 2px solid blue; */
   padding: 10px;
 }
 .div-container2 {

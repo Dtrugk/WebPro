@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  /*overflow: hidden;*/
   position: relative;
   background-color: #fff;
   min-height: 100vh;
@@ -31,7 +30,8 @@ main{
   padding-right: 0.5rem;
 }
 
-header {    
+header {
+  background-color: #E9FFC2;
   position: absolute;
   top: 0;
   left: 0;
@@ -42,20 +42,35 @@ header {
   align-items: center;
   z-index: 1000;
 }
+.header {
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 50px 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
 
 .logo {
-  color: #112423;
+  color: #0b0f29;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2em; /* Please don't use 'em' if possible */
   text-decoration: none;
-  margin-left: 92px;
+  /* margin-left: 92px; */ /* Please don't use 'margin' if possible. Instead of margin, use padding*/
 }
+
+.logo:hover {
+  text-decoration: none;
+}
+
 .navigation {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 40px;
-  margin-right: 107px;
+  /* justify-content: flex;      /* Please don't use unnecessary code*/
+  /* align-items: center; */ /* Please don't use unnecessary code */
 }
 .navigation li {
   list-style: none;
@@ -68,14 +83,10 @@ header {
 }
 .navigation li a:hover,
 .navigation li a.active {
-  background: #AAC8A7;
+  background: #aac8a7;
   border: #0b0f29 solid 2px;
   box-shadow: 5px 5px;
 }
-#PP {
-    font-size: 11px;
-    font-family: 'press start 2p'
-  }
 .bar {
   border: #0b0f29 solid 2px;
   border-radius: 8px;
