@@ -9,7 +9,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="homes.css">
 </head>
 
 <body>
@@ -34,44 +34,59 @@
         </nav>
     </header>
     <main>
+
+
+
         <section class="parallax container-fluid">
-            <div class="div-container1">
-                <!-- Start here  -->
-                <div class="div1-content">
-                   <div class="carousel" id="c1">
-                        <h2>Welcome User to homepage1</h2>
-                        <hr>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, commodi.</p>
+            <div class="carousel slide" id="myCarousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <h2>Welcome</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptates quibusdam, exercitationem nihil totam soluta voluptatibus velit neque nisi voluptatem qui maxime eius distinctio iste sit eum maiores laboriosam aperiam.</p>
+                            <a class="button btn-lg btn-primary">Direct</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <h2>Welcome to page2</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptates quibusdam, exercitationem nihil totam soluta voluptatibus velit neque nisi voluptatem qui maxime eius distinctio iste sit eum maiores laboriosam aperiam.</p>
+                            <a class="button btn-lg btn-primary">Direct</a>
+                        </div>
                     </div>
                 </div>
-                <div class="div1-content1">
-                    <p>Chua co gi o day</p>
-                </div>
             </div>
+
+
+
             <!-- End Here -->
-            <div class="div-container2">
+            <!-- <div class="div-container2">
                 <div class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="button btn btn-primary" id="btn3">More</a>
+                        <a href="#" class="button btn btn-primary">More</a>
                     </div>
                 </div>
                 <div class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="button btn btn-primary" id="btn3">More</a>
+                        <a href="#" class="button btn btn-primary">More</a>
                     </div>
                 </div>
                 <div class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="button btn btn-primary" id="btn3">More</a>
+                        <a href="#" class="button btn btn-primary">More</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <!-- <button class="button btn btn-primary">More</button> -->
     </main>
