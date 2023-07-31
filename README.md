@@ -9,15 +9,15 @@ This repository provides a template for creating a landing page, homepage, and w
 
 ## Installation
 1. Create a virtual environment and activate it by running the following commands:
-python3 -m venv env
-source env/bin/activate
+`python3 -m venv env`
+`source env/bin/activate`
 (Note: The virtual environment will be created in a directory named "env" in your root directory. You only need to run `python3 -m venv env` the first time.)
 
 2. Clone this GitHub repository by executing:
 git clone https://github.com/Dtrugk/WebPro.git
 
 3. Install the required dependencies:
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ## Usage
 1. Run the application:
