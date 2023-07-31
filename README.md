@@ -21,5 +21,7 @@ git clone https://github.com/Dtrugk/WebPro.git
 
 ## Usage
 1. Run the application:
-python3 main.py
+`python3 main.py`
+2. Run the chatbot in CLI:
+`python3 chatbot.py`
 
