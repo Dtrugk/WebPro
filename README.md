@@ -1,16 +1,25 @@
-#Desciption 
-A template for a landing page, homepage, web chatbot using google vertex API and a page for nothing (For me i use it to getgirl)
+# Landing Page and Web Chatbot Template using Google Vertex API
 
-#Set up
-1.Install pip and virtualenv if you do not already have them.
-2.Obtain authentication credentials.
-https://cloud.google.com/sdk/gcloud/reference/beta/auth/application-default/login
+## Description
+This repository provides a template for creating a landing page, homepage, and web chatbot using Google Vertex API. Additionally, it includes a page for unspecified purposes (Please make sure to use this template responsibly and ethically).
 
+## Set Up
+1. Install pip and virtualenv if you do not already have them.
+2. Obtain authentication credentials from [Google Cloud SDK](https://cloud.google.com/sdk/gcloud/reference/beta/auth/application-default/login).
 
-#Installation 
--Create a virtualenv and run the following commands
-        python3 -m venv env
-        source env/bin/activate
-(Only need to run the "python3 -m venv env" first time. After the first time you will see a dir name :"env" in your root dir)
--Clone this github repo run "pip install -r requirements.txt" 
--Run "python3 main.py"
+## Installation
+1. Create a virtual environment and activate it by running the following commands:
+python3 -m venv env
+source env/bin/activate
+(Note: The virtual environment will be created in a directory named "env" in your root directory. You only need to run `python3 -m venv env` the first time.)
+
+2. Clone this GitHub repository by executing:
+git clone https://github.com/Dtrugk/WebPro.git
+
+3. Install the required dependencies:
+pip install -r requirements.txt
+
+## Usage
+1. Run the application:
+python3 main.py
+
