@@ -15,6 +15,7 @@ body {
   position: relative;
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -94,11 +95,11 @@ header {
   position: relative;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 85vh;
   flex: 1;
   width: 100%;
   gap: 0.75em;
-  padding:20% 2% 0 2%;
+  padding:15% 2% 0 2%;
 }
 .content {
   position: relative;
@@ -106,6 +107,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .parallax p {
   font-size: 0.45em;
@@ -185,18 +187,40 @@ header {
 }
 .sec {
   position: relative;
-  padding: 100px;
-  background: #AAC8A7;
+  padding: 50px;
+  background-color: #fff;
 }
-.sec h2 {
+#khohieuvcl{
+  background: #E9FFC2;
+}
+.card h2 {
   font-size: 3em;
   color: #0b0f29;
   margin-bottom: 10px;
 }
-.sec p {
+.card p {
   font-size: 1em;
   color:#0b0f29;
   font-weight: 300;
+}
+
+.card{
+  background-color: #0b0f29;
+  border: #0b0f29 3px solid;
+  padding: 5px;
+}
+.card:hover{
+  transform: translateY(5px);
+}
+#cc{
+  background: #aac8a7;
+  border-radius: 8px;
+  border: #0b0f29 3px solid;
+  box-shadow: 7px 7px;
+}
+
+.container-fluid{
+  background-color: #aac8a7;
 }
 
 @media only screen and (max-width: 1024px) {

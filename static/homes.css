@@ -87,12 +87,10 @@ header {
   display: none;
 }
 
-/* Optional: If you want to add a border to each element for debugging purposes */
 section,
 .carousel,
 .carousel-inner,
 .carousel-item {
-  /* border: 2px solid blue; */
   padding: 10px;
 }
 .div-container2 {
@@ -166,9 +164,6 @@ section,
   transform: translateY(4px);
   box-shadow: 5px 5px;
 }
-/* #btn3:focus{
-  box-shadow: none; 
-}  */
 .card h2 {
   font-size: 20px;
 }
@@ -178,6 +173,8 @@ section,
 .button p {
   font-size: 15px;
 }
+
+
 @media only screen and (max-width: 1024px) {
   .navigation {
     display: none;

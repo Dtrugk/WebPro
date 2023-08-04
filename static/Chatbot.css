@@ -103,29 +103,34 @@ hr {
   flex: 1 0 66%;
   padding: 10px;
 }
-#Message {
+#info{
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 90%;
+}
+#chat {
   overflow: scroll;
   overflow-x: hidden;
   border-radius: 8px;
   padding: 10px;
   height: 85%;
 }
-#Message::-webkit-scrollbar {
+#hat::-webkit-scrollbar {
   width: 10px; /* Set the width of the scrollbar */
 }
 
-#Message::-webkit-scrollbar-thumb {
+#chat::-webkit-scrollbar-thumb {
   background-color: #0b0f29; /* Set the color of the thumb (the draggable part) */
-  border-radius: 5px; /* Set the border-radius of the thumb */
+  border-radius: 8px; /* Set the border-radius of the thumb */
 }
 
-#Message::-webkit-scrollbar-thumb:hover {
+#chat::-webkit-scrollbar-thumb:hover {
   background-color: #112434; /* Set the color of the thumb when hovering */
 }
 
-#Message::-webkit-scrollbar-track {
-  background-color: #f2f2f2; /* Set the color of the track (the background) */
-  border-radius: 5px; /* Set the border-radius of the track */
+#chat::-webkit-scrollbar-track {
+  background-color: #0b0f29; /* Set the color of the track (the background) */
+  border-radius: 8px; /* Set the border-radius of the track */
 }
 .message-container {
   display: flex;
@@ -137,6 +142,14 @@ hr {
   width: 30px;
   height: 30px;
   background-color: #0b0f29;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.bot-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #238b42;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -219,4 +232,46 @@ hr {
   pointer-events: none;
   background-color: gray;
   opacity: 0.5;
+}
+.message {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #0b0f29;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  align-items: flex-start;
+  max-width: fit-content;
+  height: fit-content;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1f2225;
+  margin: 5px;
+}
+
+.bot-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1bb45b;
+  margin: 5px;
+}
+
+.delete-btn { 
+  bottom: 0;
+  border: #0b0f29 2px solid ;
+  border-radius: 8px;
+  background: #aac8a7;
+  box-shadow: 5px 5px;
+  color: #0b0f29;
+}
+
+.delete-btn:active{
+  transform: translateY(4px);
+  box-shadow: 5px 5px;
 }
