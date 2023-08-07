@@ -5,27 +5,38 @@ from google.cloud import aiplatform
 app = Flask(__name__)
 app.secret_key = "your_secret_key"  
 
-chat_model = ChatModel.from_pretrained("chat-bison@001")
 
+chat_model = ChatModel.from_pretrained("chat-bison@001")
 
 chat_model2 = CodeChatModel.from_pretrained("codechat-bison@001")
 
-
+#Landing page logic-------------------------------------
 @app.route("/",methods =["GET","POST"])
 def landing():
     if request.method == "POST":
         username = request.form.get("username")
         # Store the username in the session
         session["username"] = username
-        return redirect(url_for("home"))
+        return "Success"  # Return a response for the AJAX request
     return render_template("index.html")
+# def landing():
+#     if request.method == "POST":
+#         username = request.form.get("username")
+#         # Store the username in the session
+#         session["username"] = username
+#         return redirect(url_for("home"))
+#     return render_template("index.html")
 
+
+#Home page logic----------------------------------------
 @app.route("/home")
 def home():
     username = session.get("username")
     # username = chatbot.chat()
     return render_template("home.html",username=username)
 
+
+#Chatbot logic------------------------------------------
 @app.route("/Chatbot",methods =["GET","POST"])
 def chat():
     chat = ChatSession(chat_model)
@@ -189,6 +200,7 @@ def chat():
         return render_template("Chatbot.html")
     
 
+#chatbot2 logic-----------------------------------------
 @app.route("/chatbot2",methods =["GET","POST"])
 def chat2():
     chat2 = chat_model2.start_chat()
@@ -268,14 +280,19 @@ def chat2():
     if request.method == "POST":
         usr = request.form.get("userinput2")
         response = chat2.send_message(usr, **parameters)
-        return jsonify({"response": response})
+
+        response1 = str(response)
+        # Extract the code content from the response
+        language_start = response1.find("```") + 3
+        language_end = response1.find("\n", language_start)
+        language = response1[language_start:language_end].strip()
+        language = 'python'
+
+        return jsonify({"response": response,"language":language})
     else:
         return render_template("chatbot2.html")
 
-@app.route("/getsgurl")
-def getgirl():
-    return render_template("getsgurl.html")
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)

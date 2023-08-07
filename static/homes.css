@@ -1,5 +1,6 @@
 body{
   background-color: #E9FFC2;
+  overflow-y: hidden;
 }
 .flex-container {
   display: flex;
@@ -21,36 +22,22 @@ hr{
   padding: 30px;
   bottom: 0;
 }
-header {
-  /* border: red solid 2px; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
+
+.container p,h5{
+  font-size: 12px;
 }
 .header {
-  position:relative;
-  top: 0;
-  left: 0;
   width: 100%;
   padding: 30px 50px 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
 }
-
 .logo {
   color: #0b0f29;
   font-weight: 700;
   font-size: 2em; /* Please don't use 'em' if possible */
   text-decoration: none;
-  /* margin-left: 92px; */ /* Please don't use 'margin' if possible. Instead of margin, use padding*/
 }
 
 .logo:hover {
@@ -60,24 +47,25 @@ header {
 .navigation {
   display: flex;
   gap: 40px;
-  /* justify-content: flex;      /* Please don't use unnecessary code*/
-  /* align-items: center; */ /* Please don't use unnecessary code */
 }
 .navigation li {
   list-style: none;
 }
+
 .navigation li a {
   text-decoration: none;
   padding: 6px 15px;
   color: #112434;
   border-radius: 8px;
 }
+
 .navigation li a:hover,
 .navigation li a.active {
   background: #aac8a7;
   border: #0b0f29 solid 2px;
   box-shadow: 5px 5px;
 }
+
 .bar {
   border: #0b0f29 solid 2px;
   border-radius: 8px;
@@ -93,6 +81,7 @@ section,
 .carousel-item {
   padding: 10px;
 }
+
 .div-container2 {
   display: flex;
   gap: 15px;
@@ -101,12 +90,14 @@ section,
   align-content: flex-end;
   margin-top: 0;
 }
+
 .content {
   display: flex;
   gap: 15px;
   width: 100%;
   justify-content: space-between;
 }
+
 .card {
   background: #aac8a7;
   position: relative;
@@ -115,12 +106,13 @@ section,
   width: 100%;
   min-width: 150px;
   justify-content: flex-start;
-  padding: 7px;
+  padding: 5px;
   box-shadow: 10px 10px;
 }
+
 #card1 {
   background: #aac8a7;
-  height: 185px;
+  height: auto;
 }
 #card2 {
   background: #aac8a7;
@@ -173,6 +165,70 @@ section,
 .button p {
   font-size: 15px;
 }
+.img {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden; /* This will hide any overflowing content */
+}
+
+.img img {
+  display: block;
+  width: 100%;
+  height: 80%;
+  object-fit: cover; /* This will make the image cover the entire container and maintain aspect ratio */
+}
+.cdcontainer{
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.smallcd{
+  padding: 17% 27%;
+  border-radius: 8px;
+  width: 80%;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.9px);
+  -webkit-backdrop-filter: blur(11.9px);
+  margin-bottom: 10px;
+}
+#myInput{
+  border-bottom: solid 2px #0b0f29;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: #aac8a7;
+}
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size: 200px;
+}
+#honourBUtton:hover{
+  transform: translateY(-4px);
+  box-shadow: 5px 5px;
+}
+#honourBUtton:active{
+  transform: translateY(4px);
+}
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+
 
 
 @media only screen and (max-width: 1024px) {
@@ -221,5 +277,49 @@ section,
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #card1 {
+    background: #aac8a7;
+    height: calc(250px+5%);
+  }
+  .bar {
+    display: block;
+    position: absolute;
+    right: 0;
+    top:0;
+  }
+  .header {
+    position: relative;
+    top: 0;
+    padding: 0 20px;
+    width: 100%;
+    display: block;
+    background-color: #a7acf8;
+    overflow-x: hidden;
+  }
+  nav{
+    height: 0;
+    transition: 2s;
+    z-index: 1;
+  }
+  .navigation {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+  }
+  .navigation li {
+    margin-bottom: 20px;
+  }
+  .content{
+    display: block;
+  }
+  .carousel{
+    position: absolute;
+    top: 50px;
+    z-index: -1;
   }
 }

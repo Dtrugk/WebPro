@@ -12,10 +12,6 @@ html {
 
 body {
   background-color: #E9FFC2;
-  position: relative;
-  min-height: 100vh;
-  margin: 0;
-  overflow-x: hidden;
 }
 
 .container {
@@ -26,28 +22,14 @@ body {
   padding-right: 0.5rem;
 }
 
-header {
-  background-color: #E9FFC2;
+.header {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-}
-.header {
-  position:relative;
-  top: 0;
-  left: 0;
   width: 100%;
   padding: 30px 50px 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
 }
 
 .logo {
@@ -92,22 +74,14 @@ header {
 .parallax {
   background: #E9FFC2;
   font-size: 35px;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  height: 85vh;
-  flex: 1;
-  width: 100%;
-  gap: 0.75em;
-  padding:15% 2% 0 2%;
+  padding:18% 2% 0 2%;
+  height: 100vh;
 }
 .content {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
 }
 .parallax p {
   font-size: 0.45em;
@@ -224,13 +198,31 @@ header {
 }
 
 @media only screen and (max-width: 1024px) {
-  .navigation {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-  }
   .bar {
     display: block;
+    position: relative;
+    left: 85vw;
+  }
+  .header {
+    position: absolute;
+    top: 0;
+    padding: 0 20px;
+    width: 100%;
+    display: block;
+    background-color: #a7acf8;
+    overflow-x: hidden;
+  }
+  nav{
+    height: 0;
+    transition: 2s;
+  }
+  .navigation {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+  }
+  .navigation li {
+    margin-bottom: 20px;
   }
 }

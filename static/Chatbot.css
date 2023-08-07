@@ -1,3 +1,6 @@
+*{
+  margin: 0;
+}
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -5,35 +8,17 @@ html {
 
 body {
   background-color: #E9FFC2;
-  position: relative;
-  height: 87%;
-  /* margin: 0; */
-}
-
-header {
-  background-color: #E9FFC2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
 }
 .header {
-  position:relative;
-  top: 0;
-  left: 0;
   width: 100%;
   padding: 30px 50px 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
 }
-
+p{
+  margin: 0;
+}
 .logo {
   color: #0b0f29;
   font-weight: 700;
@@ -77,7 +62,7 @@ main{
   margin-top: 10px;
   padding: 10px;
   display: flex;
-  height: 100%;
+  height: 80vh;
 }
 hr {
   height: 3px; /* Increase the height of the line */
@@ -106,7 +91,8 @@ hr {
 #info{
   overflow: scroll;
   overflow-x: hidden;
-  height: 90%;
+  margin-bottom: 20px;
+  height: 85%;
 }
 #chat {
   overflow: scroll;
@@ -133,6 +119,7 @@ hr {
   border-radius: 8px; /* Set the border-radius of the track */
 }
 .message-container {
+  overflow-x: hidden  ;
   display: flex;
   align-items: flex-start;
   margin-bottom: 10px;
@@ -155,6 +142,7 @@ hr {
 }
 
 .message-content {
+  overflow-wrap: break-word;
   background-color: #f2f2f2;
   border-radius: 8px;
   padding: 10px;
@@ -163,7 +151,7 @@ hr {
 #Input {
   position: inherit;
   border-radius: 8px;
-  height: 20%;
+  /* height: 20%; */
 } 
 
 .input-container {
@@ -241,22 +229,27 @@ hr {
   display: flex;
   flex-direction: row;
   overflow: auto;
+  overflow-x: hidden;
   align-items: flex-start;
   max-width: fit-content;
   height: fit-content;
 }
 
+.loader{
+  display: flex;
+}
+
 .user-avatar {
-  width: 40px;
-  height: 40px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: #1f2225;
   margin: 5px;
 }
 
 .bot-avatar {
-  width: 40px;
-  height: 40px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: #1bb45b;
   margin: 5px;
@@ -274,4 +267,61 @@ hr {
 .delete-btn:active{
   transform: translateY(4px);
   box-shadow: 5px 5px;
+}
+
+/* #scrollAnchor{
+  position: absolute;
+  bottom: 0;
+} */
+
+@keyframes blink {50% { color: transparent }}
+.loader__dot { animation: 1s blink infinite }
+.loader__dot:nth-child(2) { animation-delay: 250ms }
+.loader__dot:nth-child(3) { animation-delay: 500ms }
+
+.loader__dot{
+  font-size : large;
+}
+
+@media only screen and (max-width: 670px) {
+  .bar {
+    display: block;
+    position: relative;
+    left: 85vw;
+  }
+  .header {
+    position: absolute;
+    top: 0;
+    padding: 0 20px;
+    width: 100%;
+    display: block;
+    background-color: #a7acf8;
+    overflow-x: hidden;
+  }
+  nav{
+    height: 0;
+    transition: 2s;
+  }
+  .navigation {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+  }
+  .navigation li {
+    margin-bottom: 20px;
+  }
+  main{
+    display: block;
+  }
+  .chat-info{
+    height: 67%;
+    margin: 20px 0;
+  }
+  #info{
+    height: 73%;
+  }
+  #chat{
+    height: 100px;
+  }
 }
